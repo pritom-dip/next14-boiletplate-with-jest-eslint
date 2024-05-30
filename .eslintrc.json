@@ -11,5 +11,13 @@
   "rules": {
     "prettier/prettier": "error",
     "no-console": "warn"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.ts", "**/*.test.tsx"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
 }
